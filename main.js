@@ -15,7 +15,40 @@ let secondPlayer = {
 }
 
 function creatPlayer(player, name, health = 100) {
-    arena.appendChild()
+    let divPlayer = document.createElement('div');
+
+    divPlayer.classList.add(player);
+
+
+
+    let divProgressbar = document.createElement('div');
+
+    divProgressbar.classList.add("progressbar");
+
+    let divLife = document.createElement('div');
+
+    divLife.classList.add("life");
+
+    let divName = document.createElement('div');
+
+    divName.classList.add("name");
+
+    divPlaye.appendChild(divLife);
+    divPlaye.appendChild(divName);
+
+
+
+
+    let divCharacter = document.createElement('div');
+
+    divCharacter.classList.add(player);
+    divArena.appendChild(divPlayer);
+
+
+
+
+
+    divArena.appendChild(divPlayer);
 }
 
 createPlayer('player1', 'SCORPION', 50);
