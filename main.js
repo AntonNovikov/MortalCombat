@@ -14,6 +14,8 @@ let secondPlayer = {
     attack: function() { console.log(this.name + " fight " + "Fight..."); },
 }
 
+let divArena = document.querySelector(".arena");
+
 function creatPlayer(player, name, health = 100) {
     let divPlayer = document.createElement('div');
 
@@ -25,6 +27,8 @@ function creatPlayer(player, name, health = 100) {
 
     divProgressbar.classList.add("progressbar");
 
+    divPlayer.appendChild(divProgressbar);
+
     let divLife = document.createElement('div');
 
     divLife.classList.add("life");
@@ -33,19 +37,14 @@ function creatPlayer(player, name, health = 100) {
 
     divName.classList.add("name");
 
-    divPlaye.appendChild(divLife);
-    divPlaye.appendChild(divName);
-
-
+    divProgressbar.appendChild(divLife);
+    divProgressbar.appendChild(divName);
 
 
     let divCharacter = document.createElement('div');
 
     divCharacter.classList.add(player);
-    divArena.appendChild(divPlayer);
-
-
-
+    divPlayer.appendChild(divCharacter);
 
 
     divArena.appendChild(divPlayer);
