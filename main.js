@@ -84,7 +84,7 @@ function creatPlayer(player, name, health = 100) {
 //     let divCharacter = document.createElement("div");
 
 //     let imgCharacter = document.createElement("img");
-//     imgCharacter.setAttribute(playerOb.img);
+//     imgCharacter.setAttribute("src", playerOb.img);
 //     divCharacter.appendChild(imgCharacter);
 
 //     divCharacter.classList.add(player);
@@ -95,7 +95,6 @@ function creatPlayer(player, name, health = 100) {
 
 createPlayer("player1", "SCORPION", 50);
 createPlayer("player2", "SUB-ZERO", 80);
-
 
 // createPlayer("player1", firstPlayer);
 // createPlayer("player2", secondPlayer);
