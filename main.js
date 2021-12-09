@@ -1,5 +1,5 @@
 let firstPlayer = {
-    name: "Федор",
+    name: "SCORPION",
     hp: 100,
     img: "//",
     weapon: [gun, bow],
@@ -9,7 +9,7 @@ let firstPlayer = {
 };
 
 let secondPlayer = {
-    name: "Федорка",
+    name: "SUB-ZERO",
     hp: 100,
     img: "//",
     weapon: [gun, bow],
@@ -56,5 +56,46 @@ function creatPlayer(player, name, health = 100) {
     divArena.appendChild(divPlayer);
 }
 
+// function creatPlayer(player, playerOb) {
+//     let divPlayer = document.createElement("div");
+
+//     divPlayer.classList.add(player);
+
+//     let divProgressbar = document.createElement("div");
+
+//     divProgressbar.classList.add("progressbar");
+
+//     divPlayer.appendChild(divProgressbar);
+
+//     let divLife = document.createElement("div");
+
+//     divLife.classList.add("life");
+//     let healthProgress = `"${playerOb.hp}%`;
+//     divLife.style.width = healthProgress;
+
+//     let divName = document.createElement("div");
+
+//     divName.classList.add("name");
+//     divName.innerText = playerOb.name;
+
+//     divProgressbar.appendChild(divLife);
+//     divProgressbar.appendChild(divName);
+
+//     let divCharacter = document.createElement("div");
+
+//     let imgCharacter = document.createElement("img");
+//     imgCharacter.setAttribute(playerOb.img);
+//     divCharacter.appendChild(imgCharacter);
+
+//     divCharacter.classList.add(player);
+//     divPlayer.appendChild(divCharacter);
+
+//     divArena.appendChild(divPlayer);
+// }
+
 createPlayer("player1", "SCORPION", 50);
 createPlayer("player2", "SUB-ZERO", 80);
+
+
+// createPlayer("player1", firstPlayer);
+// createPlayer("player2", secondPlayer);
