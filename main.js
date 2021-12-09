@@ -32,16 +32,21 @@ function creatPlayer(player, name, health = 100) {
     let divLife = document.createElement('div');
 
     divLife.classList.add("life");
+    divLife.style.width = "100%";
 
     let divName = document.createElement('div');
 
     divName.classList.add("name");
+    divName.innerText = name;
 
     divProgressbar.appendChild(divLife);
     divProgressbar.appendChild(divName);
 
 
     let divCharacter = document.createElement('div');
+
+    let imgCharacter = document.createElement('img');
+    divCharacter.appendChild(imgCharacter);
 
     divCharacter.classList.add(player);
     divPlayer.appendChild(divCharacter);
